@@ -1,0 +1,45 @@
+
+CREATE DATABASE IF NOT EXISTS testdb;
+
+create table testdb.tutorials (
+  ID double not null comment 'Tutorial id'
+  , TITLE VARCHAR(256) not null comment 'TITLE'
+  , DESCRIPTION VARCHAR(256) not null comment 'DESCRIPTION'
+  , PUBLISHED boolean comment 'PUBLISHED'
+  , constraint BASIC_SETTING_PKC primary key (ID)
+) comment 'TUTORIALS' ;
+
+--------------------------------
+
+create table testdb.hibernate_sequence (
+  next_val BIGINT not null comment 'next_val '
+) comment 'hibernate_sequence' ;
+
+--------------------------------
+
+create table testdb.t_user (
+  id double not null comment 'id '
+  ,name varchar(45)  comment 'name'
+) comment 't_user' ;
+
+
+
+--------------------------------
+?ê⁄êîêò?
+gcloud sql connect sakura --user=root --quiet
+
+
+use dbname;
+
+DROP TABLE [IF EXISTS] tbl_name [, tbl_name] ...
+
+
+show tables;
+
+
+
+
+
+
+
+
